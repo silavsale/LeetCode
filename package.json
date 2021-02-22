@@ -1,0 +1,23 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "94_BinaryTreeTraversal.js",
+  "scripts": {
+    "start": "node script.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silavsale/LeetCode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/silavsale/LeetCode/issues"
+  },
+  "homepage": "https://github.com/silavsale/LeetCode#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
