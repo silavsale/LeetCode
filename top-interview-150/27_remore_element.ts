@@ -39,25 +39,20 @@
 // It does not matter what you leave beyond the returned k (hence they are underscores).
 
 function removeElement(nums: any[], val: number): number {
-    let lastElement = nums.length -1
+    let index = 0
 
     for (let i = 0; i < nums.length; i++) {
-        if(nums[lastElement] === val){
-            nums[lastElement] = '_'
-            lastElement --
-        }
-
-        if(nums[i] === val){
-            nums[i] === nums[lastElement]
-            nums[lastElement] = '_'
-            lastElement --
-        }
-        
+        if(nums[i] !== val){
+            nums[index] = nums[i]
+            index ++
+        }        
     }
-    console.log('nums', nums);
+
+    console.log(nums);
     
-    return nums.length
+    return index
 };
 
-removeElement([3,2,2,3], 3)
-removeElement([0,1,2,2,3,0,4,2], 2)
+// removeElement([3,2,2,3], 3)
+// removeElement([0,1,2,2,3,0,4,2], 2)
+removeElement([3,1,3,3,3], 3)
